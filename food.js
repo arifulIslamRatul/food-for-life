@@ -70,7 +70,7 @@ const showMeals = (meals) => {
                 <h2 class="card-title text-green-600">${meal.strMeal}</h2>
                 <p class="text-justify" title="${meal.strInstructions}" >${meal.strInstructions.slice(0,160)}...</p>
                 <div class="card-actions justify-end">
-                    <button onclick="handleShowDetails(${meal.idMeal})" class="btn btn-primary">Show more</button>
+                    <button onclick="handleShowDetails(${meal.idMeal})" class="btn btn-outline btn-accent">Show more</button>
                 </div>
             </div>   
         `;
@@ -91,15 +91,15 @@ const showMealDetails = meal => {
 
     const showDetailsContainer = document.getElementById("meal-details-cotainer");
     showDetailsContainer.innerHTML = `
-      <img class="h-96 mx-auto" src="${meal.strMealThumb}" alt="meal details image">
-      <p class="mt-4 text-2xl text-semibild">Name: ${meal.strMeal}</p>
-      <p class="mt-4 text-2xl text-semibild">Food Category: ${meal.strCategory}</p>
-      <p class="text-semibild">Description: ${meal.strInstructions}</p>
+      <img class="h-96 mx-auto rounded-xl" src="${meal.strMealThumb}" alt="meal details image">
+      <p class="mt-4 text-4xl text-semibild text-green-600">Name: ${meal.strMeal}</p>
+      <p class="mt-4 text-2xl text-semibild text-green-700">Food Category: ${meal.strCategory}</p>
+      <p class="mt-4 text-semibild text-justify"><span Class="text-green-700 text-lg">Description:</span> ${meal.strInstructions}</p>
       <p class="text-semibild pt-4 hover:cursor-pointer">More Details: <span class="text-blue-600">
          <a href="${meal.strSource}" target="_blank">${meal.strSource} </a> 
       </span></p>
       <p class="text-semibild pt-4 hover:cursor-pointer"> 
-      <i class="fa-brands fa-youtube"></i> Watch Video: <span class="text-blue-600">
+      <i class="fa fa-youtube-play"></i> Watch Video: <span class="text-blue-600">
          <a href="${meal.strYoutube}" target="_blank">${meal.strYoutube} </a> 
       </span></p>
     `
