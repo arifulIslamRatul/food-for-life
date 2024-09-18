@@ -23,9 +23,9 @@
                 </div>
                 <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                   <li><a id="menuItem" onclick="foodMenu()">Chicken</a></li>
-                  <li><a id="menuItem2" onclick="foodMenu()">Fish</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>Collection</a></li>
+                  <li><a id="menuItem2" onclick="foodMenu2()">Fish</a></li>
+                  <li><a id="menuItem3" onclick="foodMenu3()">Soup</a></li>
+                  <li><a id="menuItem4" onclick="foodMenu4()">Cake</a></li>
                 </ul>
               </div>
             <div class="navbar-start">
@@ -36,10 +36,10 @@
           
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a onclick="foodMenu()">Chicken</a></li>
-              <li><a>Fish</a></li>
-              <li><a>Soup</a></li>
-              <li><a>Collection</a></li>
+              <li><a id="menuItem" onclick="foodMenu()">Chicken</a></li>
+              <li><a id="menuItem2" onclick="foodMenu2()">Fish</a></li>
+              <li><a id="menuItem3" onclick="foodMenu3()">Soup</a></li>
+              <li><a id="menuItem4" onclick="foodMenu4()">Cake</a></li>
             </ul>
           </div>
     
@@ -81,10 +81,11 @@
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-neutral-content text-center">
           <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+            <h1 class="mb-5 text-5xl font-bold">Pizza Crust</h1>
             <p class="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-              quasi. In deleniti eaque aut repudiandae et a id nisi.
+              What a treat — hot homemade pizza, with exactly the toppings you like. 
+              And this crust adapts to YOUR schedule: make the dough now, and serve 
+              fresh pizza up to 2 days later
             </p>
             <button class="btn btn-primary">Get Started</button>
           </div>
@@ -122,10 +123,10 @@
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-neutral-content text-center">
           <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+            <h1 class="mb-5 text-5xl font-bold">Delicious Desserts</h1>
             <p class="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-              quasi. In deleniti eaque aut repudiandae et a id nisi.
+              When it’s hot outside, a no-bake dessert like this blueberry cheesecake icebox 
+              cake is an ace up your sleeve. Layers of blueberry jam, whipped cream cheese
             </p>
             <button class="btn btn-primary">Get Started</button>
           </div>
@@ -144,7 +145,7 @@
 
     <!-- result  -->
         <section>
-            <div id="result-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div id="result-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             </div>
 
         </section>
@@ -154,23 +155,28 @@
         <h1 class="text-center text-3xl my-20">FAQ Section</h1>
         <div class="collapse collapse-arrow bg-base-200 ">
           <input type="radio" name="my-accordion-2" checked="checked" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-title text-xl font-medium">Can I Use Your Photo Or Recipe On My Website Or Blog?</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>Recipes – no. At this time, I do not allow republication of my post or recipe text without prior 
+              consent. If people copy and paste my recipes and republish them onto their websites, it will 
+              negatively affect how Pinch of Yum gets displayed in search results, which isn’t cool.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-title text-xl font-medium">How Do I Start a Food Blog?</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>Hey, exciting question! Bjork and I have several resources set up to help new 
+              bloggers navigate all the challenges of starting a food blog...... </p>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-title text-xl font-medium">I tried one of your recipes and 
+            it didn’t work. What did I do wrong?</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>First of all, thank you for trying one of my recipes. And please know that 
+              my intent is always to create a recipe that works for everyone......</p>
           </div>
         </div>
       </section>
